@@ -18,13 +18,13 @@ provider "azurerm" {
 
 # Create a resource group
 resource "azurerm_resource_group" "example" {
-  name     = "example-resources2"
-  location = "West Europe"
+  name     = var.rg_name
+  location = var.location
 }
 
 # Create a virtual network within the resource group
 resource "azurerm_virtual_network" "example" {
-  name                = "example-network"
+  name                = var.net_name
   resource_group_name = azurerm_resource_group.example.name
   location            = azurerm_resource_group.example.location
   address_space       = ["10.0.0.0/16"]
