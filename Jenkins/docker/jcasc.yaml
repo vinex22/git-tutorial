@@ -1,0 +1,7 @@
+unclassified:
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: myuser
+          password: mypassword

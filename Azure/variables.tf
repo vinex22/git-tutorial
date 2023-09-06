@@ -1,14 +1,14 @@
 variable "rg_name" {
-    default = "example-resource"
-  type = string
+  default = "example-resource-vin"
+  type    = string
 }
 variable "location" {
-    default = "Southeast Asia"
-  type = string
+  default = "Southeast Asia"
+  type    = string
 }
 
 variable "net_name" {
   default = "example-network"
-  type = string
+  type    = string
 
 }
