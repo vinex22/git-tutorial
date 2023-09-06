@@ -18,3 +18,19 @@ unclassified:
     url: http://127.0.0.1:8080/
 jobs:
   - file: /usr/local/seedjob.groovy
+
+plugin:
+    repositories:
+      - id: "default"
+        url: "https://updates.jenkins.io/update-center.json"
+
+    installations:
+      - name: "pipeline"
+        source:
+          plugin: "pipeline"
+        version: "2.7"
+
+      - name: "git"
+        source:
+          plugin: "git"
+        version: "4.11.0"

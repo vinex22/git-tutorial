@@ -1,5 +1,5 @@
 docker run -d -p 8080:8080 -p 50000:50000 --name jenkins \
-   -v jenkins-data:/var/jenkins_home \
-   --env CASC_JENKINS_CONFIG=https://raw.githubusercontent.com/your-username/your-repo/main/path/to/your/jcasc.yml \
+  
+  --env CASC_JENKINS_CONFIG=https://raw.githubusercontent.com/vinex22/git-tutorial/main/Jenkins/docker/jcasc.yaml\
    --env JENKINS_JAVA_OPTIONS="-Djenkins.install.runSetupWizard=false" \
    jenkins/jenkins:lts
