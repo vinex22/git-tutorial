@@ -94,6 +94,17 @@ jenkins:
         - mailer:
             emailAddress: "admin@123.com"
         - "apiToken"
+      - id: "vinex22"
+        name: "vinex22"
+        properties:
+        - "myView"
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - "experimentalFlags"
+        - mailer:
+            emailAddress: "admin2@123.com"
+        - "apiToken"
   slaveAgentPort: -1
   updateCenter:
     sites:
