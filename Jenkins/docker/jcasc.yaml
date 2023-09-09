@@ -19,6 +19,7 @@ credentials:
           scope: GLOBAL
           username: "vinex22"
 jenkins:
+  systemMessage: "Automating Jenkins Setup using Docker and Jenkins Configuration as Code\n\n"
   agentProtocols:
   - "JNLP4-connect"
   - "Ping"
